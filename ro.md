@@ -100,8 +100,7 @@ return `Salut, ${name}!`;
 ```javascript
 const fetch = require('node-fetch');
 const userId = $userId; // $userId din UI
-// Presupunem că API_KEY este hardcodat pentru acest exemplu, sau gestionat de platformă dacă este posibil
-const API_KEY = "CHEIA_DVS_API_HARDCODATA"; // Nu este ideal, vezi Cele Mai Bune Practici
+const API_KEY = "api_key";
 
 try {
     const response = await fetch(`https://api.example.com/users/${userId}`, {
@@ -152,7 +151,7 @@ try {
 const fetch = require('node-fetch');
 const city = $city;
 
-const weatherApiKey = "CHEIA_DVS_API_REALA_HARDCODATA_AICI";
+const weatherApiKey = "api_key";
 
 if (!city) {
     return "Eroare: Orașul este o intrare obligatorie.";
